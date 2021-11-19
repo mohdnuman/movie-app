@@ -102,25 +102,6 @@ export const data=[
         },
         {
             "adult": false,
-            "backdrop_path": "/4vCh8R4yd6ybOmbxRAPOzaXmLTV.jpg",
-            "genre_ids": [
-                10749,
-                18
-            ],
-            "id": 744275,
-            "original_language": "en",
-            "original_title": "After We Fell",
-            "overview": "Just as Tessa's life begins to become unglued, nothing is what she thought it would be. Not her friends nor her family. The only person that she should be able to rely on is Hardin, who is furious when he discovers the massive secret that she's been keeping. Before Tessa makes the biggest decision of her life, everything changes because of revelations about her family.",
-            "popularity": 2110.317,
-            "poster_path": "https://image.tmdb.org/t/p/original/y0BBwpk5IIVbV655mfeR7kCNYhb.jpg",
-            "release_date": "2021-09-01",
-            "title": "After We Fell",
-            "video": false,
-            "vote_average": 7.3,
-            "vote_count": 847
-        },
-        {
-            "adult": false,
             "backdrop_path": "/eeijXm3553xvuFbkPFkDG6CLCbQ.jpg",
             "genre_ids": [
                 878,
