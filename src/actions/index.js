@@ -45,3 +45,39 @@ export function setShowFavourites(val){
 
 }
 
+export function handleMovieSearch(movie){
+    const url=`https://api.themoviedb.org/3/search/movie?api_key=52db3c1544ef4ed388278b8da2ce2109&language=en-US&query=${movie}&page=1&include_adult=false`;
+    console.log(movie);
+    console.log(url);
+    return function(dispatch){
+        fetch(url)
+            .then(response=>response.json())
+            .then(movie=>{
+                // console.log(movie.results[0]);
+
+                dispatch(addMovieSearchResult(movie.results[0]));
+            })
+        }
+}
+
+export const ADD_SEARCH_RESULT='ADD_SEARCH_RESULT';
+
+
+export function addMovieSearchResult(movie){
+    console.log(movie);
+    return {
+        type:ADD_SEARCH_RESULT,
+        movie:movie
+    }
+}
+
+
+export const ADD_MOVIE_TO_LIST='ADD_MOVIE_TO_LIST';
+
+export function addMovieToList(movie){
+    return {
+        type:ADD_MOVIE_TO_LIST,
+        movie:movie
+    }
+}
+

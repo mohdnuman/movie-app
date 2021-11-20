@@ -16,7 +16,7 @@ class Moviecard extends React.Component {
         return (
             <div className="movie-card">
                 <div className="left">
-                    <img alt="movie-poster" src={movie.poster_path}/>
+                    <img alt="movie-poster" src={'https://image.tmdb.org/t/p/original'+movie.poster_path}/>
                 </div>
                 <div className="right">
                     <div className="title">{movie.original_title}</div>
