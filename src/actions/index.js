@@ -47,8 +47,8 @@ export function setShowFavourites(val){
 
 export function handleMovieSearch(movie){
     const url=`https://api.themoviedb.org/3/search/movie?api_key=52db3c1544ef4ed388278b8da2ce2109&language=en-US&query=${movie}&page=1&include_adult=false`;
-    console.log(movie);
-    console.log(url);
+    // console.log(movie);
+    // console.log(url);
     return function(dispatch){
         fetch(url)
             .then(response=>response.json())
@@ -64,7 +64,7 @@ export const ADD_SEARCH_RESULT='ADD_SEARCH_RESULT';
 
 
 export function addMovieSearchResult(movie){
-    console.log(movie);
+    // console.log(movie);
     return {
         type:ADD_SEARCH_RESULT,
         movie:movie

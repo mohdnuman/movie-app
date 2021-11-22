@@ -59,7 +59,7 @@ export function search (state=initialSearchState,action){
     
     switch(action.type){
         case ADD_SEARCH_RESULT:
-            console.log("hello");
+            // console.log("hello");
             return {
              ...state,
              result:action.movie,
@@ -73,7 +73,7 @@ export function search (state=initialSearchState,action){
          }        
     
         default:
-            console.log("heyy2")
+            // console.log("heyy2")
             return state;    
 
     }
